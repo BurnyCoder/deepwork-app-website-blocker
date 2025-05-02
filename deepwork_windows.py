@@ -22,8 +22,6 @@ WEBSITES_TO_BLOCK = [
     "www.reddit.com",
     "boards.4chan.org",
     "www.4chan.org",
-    "derpibooru.org",
-    "www.derpibooru.org",
     "news.ycombinator.com",
     "www.ycombinator.com",
     "ycombinator.com",
