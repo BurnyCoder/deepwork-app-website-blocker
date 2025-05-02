@@ -1,0 +1,1 @@
+python "C:\Users\Burny\scripts\deepwork\deepwork_windows.py"

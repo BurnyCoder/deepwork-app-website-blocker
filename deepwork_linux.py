@@ -60,6 +60,8 @@ ff02::1 ip6-allnodes
 127.0.0.1 www.ycombinator.com
 127.0.0.1 linkedin.com
 127.0.0.1 www.linkedin.com
+127.0.0.1 derpibooru.org
+127.0.0.1 www.derpibooru.org
 127.0.0.1 lesswrong.com
 127.0.0.1 www.lesswrong.com
 127.0.0.1 alignmentforum.org

@@ -22,6 +22,8 @@ WEBSITES_TO_BLOCK = [
     "www.reddit.com",
     "boards.4chan.org",
     "www.4chan.org",
+    "derpibooru.org",
+    "www.derpibooru.org",
     "news.ycombinator.com",
     "www.ycombinator.com",
     "ycombinator.com",
@@ -293,6 +295,19 @@ if __name__ == "__main__":
                     print("Already in 'off' mode.")
                     continue
                 print("--- Switching to Unblock ('off' mode) ---")
+
+                # Confirmation prompt
+                confirmation_phrase = "I will not stop cool deepwork session"
+                try:
+                    confirm_input = input(f"Please type the following phrase exactly to confirm: '{confirmation_phrase}'\nEnter phrase: ")
+                except EOFError:
+                    print("\nEOF received during confirmation, cancelling 'off' switch.")
+                    continue # Go back to the main loop
+
+                if confirm_input.strip() != confirmation_phrase:
+                    print("Confirmation failed. Staying in 'on' mode.")
+                    continue # Skip unblocking
+
                 # Stop the killer thread if it's running
                 if killer_thread is not None and killer_thread.is_alive():
                     print("Stopping process killer thread...")
