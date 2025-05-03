@@ -103,6 +103,7 @@ APP_PATHS = {
     "Telegram": os.path.expandvars(r"%AppData%\Telegram Desktop\Telegram.exe"),
     # Alternative Telegram Path:
     # "TelegramPF": r"C:\Program Files\Telegram Desktop\Telegram.exe",
+    "Steam": r"C:\Program Files (x86)\Steam\Steam.exe",
 }
 
 # Hosts file path
