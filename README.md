@@ -47,8 +47,8 @@ This repository contains Python scripts designed to help you focus during deep w
 
 #### Helper Files (Optional)
 
--   `deepwork.ps1`: A simple PowerShell script wrapper that executes the `deepwork_windows.py` script using `python`. You might need to adjust the path to `python` and the script within `deepwork.ps1` if they are different on your system.
--   `Deepwork.lnk`: A Windows shortcut file designed to launch `deepwork.ps1` easily, potentially bypassing execution policy restrictions (`-ExecutionPolicy Bypass`). You will likely need to edit the shortcut's "Target" property to reflect the correct absolute paths to `powershell.exe` and `deepwork.ps1` on your machine. Right-click the `.lnk` file, go to "Properties", and update the "Target" field. Remember to also configure the shortcut to "Run as administrator" in the "Advanced" properties of the "Shortcut" tab.
+-   `deepwork_windows.ps1`: A simple PowerShell script wrapper that executes the `deepwork_windows.py` script using `python`. You might need to adjust the path to `python` and the script within `deepwork.ps1` if they are different on your system.
+-   `deepwork_windows.lnk`: A Windows shortcut file designed to launch `deepwork.ps1` easily, potentially bypassing execution policy restrictions (`-ExecutionPolicy Bypass`). You will likely need to edit the shortcut's "Target" property to reflect the correct absolute paths to `powershell.exe` and `deepwork.ps1` on your machine. Right-click the `.lnk` file, go to "Properties", and update the "Target" field. Remember to also configure the shortcut to "Run as administrator" in the "Advanced" properties of the "Shortcut" tab.
 
 ### Linux (`deepwork_linux.py`)
 
