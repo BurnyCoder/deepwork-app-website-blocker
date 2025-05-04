@@ -269,7 +269,7 @@ if __name__ == "__main__":
         while True:
             try:
                 # Add a newline before the prompt for cleaner output
-                user_input = input(f"\nCurrent mode: {current_mode}. Enter command (on/off/exit): ").strip().lower()
+                user_input = input(f"\nCurrent mode: {current_mode}. \nEnter command (on/off/exit): \n").strip().lower()
             except EOFError: # Handle Ctrl+Z or pipe closing
                 print("\nEOF received, exiting...")
                 user_input = "exit"
